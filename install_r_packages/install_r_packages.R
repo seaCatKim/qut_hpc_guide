@@ -40,7 +40,10 @@ install_packages <- function(lib_dir){
                 'rlist',
                 'ggplot2',
                 'brms',
-                'rstan')
+                'rstan',
+               'here',
+               'tidymodels',
+               'themis')
   ipak(packages, lib_dir)
   
   #install packages with devtools from Github
