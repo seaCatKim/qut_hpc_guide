@@ -21,35 +21,15 @@ ipak <- function(pkg, lib_dir){
 
 install_packages <- function(lib_dir){
   # usage
-  packages <- c('tidyverse',
-                'lme4',
-                'randomForest',
-                'Rcpp',
-                'devtools',
-                'lubridate',
-                'readxl',
-                'broom',
-                'testthat',
-                'stringr',
-                'magrittr',
-                'mlbench',
-                'optparse',
-                'gbm',
-                'XML',
-                'RCurl',
-                'rlist',
-                'ggplot2',
-                'brms',
-                'rstan',
-               'here',
-               'tidymodels',
-               'themis')
+  packages <- c('rmarkdown',
+                'knitr',
+                )
   ipak(packages, lib_dir)
   
   #install packages with devtools from Github
-  devtools::install_github("rstudio/reticulate")
-  devtools::install_github("rstudio/tensorflow")
-  devtools::install_github("rstudio/keras")
+  #devtools::install_github("rstudio/reticulate")
+  #devtools::install_github("rstudio/tensorflow")
+  #devtools::install_github("rstudio/keras")
 }
 
 
