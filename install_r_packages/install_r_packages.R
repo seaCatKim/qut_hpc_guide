@@ -21,7 +21,9 @@ ipak <- function(pkg, lib_dir){
 
 install_packages <- function(lib_dir){
   # usage
-  packages <- c('vip')
+  packages <- c('rmarkdown', 
+                'knitr', 
+                'vip')
   ipak(packages, lib_dir)
   
   #install packages with devtools from Github
