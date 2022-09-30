@@ -21,7 +21,8 @@ ipak <- function(pkg, lib_dir){
 
 install_packages <- function(lib_dir){
   # usage
-  packages <- c('caret')
+  packages <- c('caret',
+               'doParallel')
   ipak(packages, lib_dir)
   
   #install packages with devtools from Github
