@@ -54,9 +54,7 @@ install_packages <- function(lib_dir){
 
 
 main <- function(){
-  args <- commandArgs()
-  # check command line arg for library directory was supplied
-    
+  args <- commandArgs()   # check command line arg for library directory was supplied
   if length(args) < 6{
     print("Command line arg for path of user libraries needs to be supplied")
     exit()
