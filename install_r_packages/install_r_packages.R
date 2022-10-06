@@ -23,7 +23,8 @@ install_packages <- function(lib_dir){
   # usage
   packages <- c(
                'doParallel',
-                'caret'
+                'caret',
+                'tidyverse'
                 )
   ipak(packages, lib_dir)
   
