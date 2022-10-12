@@ -6,7 +6,7 @@
 ## ipak function: install and load multiple R packages.
 ## check to see if packages are installed. Install them if they are not, then load them into the R session.
 
-exit <- function() { invokeRestart("abort") } 
+exit <- function() { invokeRestart("abort") }
 
 ipak <- function(pkg, lib_dir){
     new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
@@ -24,19 +24,27 @@ install_packages <- function(lib_dir){
   packages <- c(
                'doParallel',
                 'caret',
-                'tidyverse'
+                'tidyverse',
+               'readr',
+               'tidymodels',
+               'finetune',
+               'themis',
+               'terra',
+               'sf',
+               'vip'
+
                 )
   ipak(packages, lib_dir)
-  
+
   #install packages with devtools from Github
-  #devtools::install_github("rstudio/reticulate")
-  #devtools::install_github("rstudio/tensorflow")
-  #devtools::install_github("rstudio/keras")
+  devtools::install_github("rstudio/reticulate")
+  devtools::install_github("rstudio/tensorflow")
+  devtools::install_github("rstudio/keras")
 }
 
 
 main <- function(){
-  args <- commandArgs()  
+  args <- commandArgs()
   # check command line arg for library directory was supplied
   if (length(args) < 6){
     print("Command line arg for path of user libraries needs to be supplied")
