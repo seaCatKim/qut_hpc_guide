@@ -22,11 +22,7 @@ ipak <- function(pkg, lib_dir){
 install_packages <- function(lib_dir){
   # usage
   packages <- c(
-               'pins',
-               'terra',
-                'sf',
-                'here',
-                'visdat'
+               'fs'
                 )
   ipak(packages, lib_dir)
 
