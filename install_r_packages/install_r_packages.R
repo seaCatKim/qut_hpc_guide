@@ -22,9 +22,7 @@ ipak <- function(pkg, lib_dir){
 install_packages <- function(lib_dir){
   # usage
   packages <- c(
-               'fs',
-                'plotly',
-                'leaflet'
+               'rmarkdown'
                 )
   ipak(packages, lib_dir)
 
