@@ -9,7 +9,7 @@
 exit <- function() { invokeRestart("abort") }
 
 ipak <- function(pkg, lib_dir){
-    new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+    new.pkg <- pkg #[!(pkg %in% installed.packages()[, "Package"])]
     print(new.pkg)
     if (length(new.pkg))
         install.packages(new.pkg,
