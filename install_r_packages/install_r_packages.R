@@ -22,8 +22,25 @@ ipak <- function(pkg, lib_dir){
 install_packages <- function(lib_dir){
   # usage
   packages <- c(
-               'nngeo'
-                )
+      'nngeo',
+      'caret',
+       'doParallel',
+       'tidymodels',
+        'tidyverse',
+        'finetune',
+        'fs',
+        'here',
+        'leaflet',
+        'pins',
+        'plotly',
+        'rmarkdown',
+        'sf',
+        'terra',
+        'themis',
+        'tmap',
+        'vip',
+        'fread'
+                      )
   ipak(packages, lib_dir)
 
   #install packages with devtools from Github
