@@ -9,7 +9,7 @@
 exit <- function() { invokeRestart("abort") }
 
 ipak <- function(pkg, lib_dir){
-    new.pkg <- pkg #[!(pkg %in% installed.packages()[, "Package"])]
+    new.pkg <- pkg [!(pkg %in% installed.packages()[, "Package"])]
     print(new.pkg)
     if (length(new.pkg))
         install.packages(new.pkg,
@@ -44,9 +44,9 @@ install_packages <- function(lib_dir){
   ipak(packages, lib_dir)
 
   #install packages with devtools from Github
-  #devtools::install_github("rstudio/reticulate")
-  #devtools::install_github("rstudio/tensorflow")
-  #devtools::install_github("rstudio/keras")
+  devtools::install_github("rstudio/reticulate")
+  devtools::install_github("rstudio/tensorflow")
+  devtools::install_github("rstudio/keras")
 }
 
 
