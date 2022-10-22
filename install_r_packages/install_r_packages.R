@@ -39,14 +39,17 @@ install_packages <- function(lib_dir){
         'themis',
         'tmap',
         'vip',
-        'fread'
+        'fread',
+      'sp',
+      'maptools',
+      'spatstat'
                       )
   ipak(packages, lib_dir)
 
   #install packages with devtools from Github
-  devtools::install_github("rstudio/reticulate")
-  devtools::install_github("rstudio/tensorflow")
-  devtools::install_github("rstudio/keras")
+ # devtools::install_github("rstudio/reticulate")
+ # devtools::install_github("rstudio/tensorflow")
+ # devtools::install_github("rstudio/keras")
 }
 
 
