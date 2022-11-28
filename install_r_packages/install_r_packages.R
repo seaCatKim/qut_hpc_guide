@@ -41,7 +41,7 @@ install_packages <- function(lib_dir){
        # 'themis',
        # 'tmap',
        # 'vip',
-        'sp',
+        'sp'
      # 'maptools',
      # 'spatstat'
                       )
