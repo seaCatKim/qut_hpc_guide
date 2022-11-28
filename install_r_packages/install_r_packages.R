@@ -22,8 +22,8 @@ ipak <- function(pkg, lib_dir){
 install_packages <- function(lib_dir){
   # usage
   packages <- c(
-      'fields',
-      'gstat',
+      #'fields',
+     # 'gstat',
      # 'nngeo',
       #'caret',
       # 'doParallel',
@@ -36,12 +36,12 @@ install_packages <- function(lib_dir){
       #  'pins',
       # 'plotly',
        # 'rmarkdown',
-        'sf',
-        'terra',
+       # 'sf',
+        'terra'
        # 'themis',
        # 'tmap',
        # 'vip',
-        'sp'
+       # 'sp'
      # 'maptools',
      # 'spatstat'
                       )
