@@ -24,33 +24,33 @@ install_packages <- function(lib_dir){
   packages <- c(
       'fields',
       'gstat',
-      'nngeo',
+     # 'nngeo',
       #'caret',
-       'doParallel',
+      # 'doParallel',
       # 'tidymodels',
       #  'tidyverse',
-        'finetune',
-        'fs',
-        'here',
+      #  'finetune',
+      #  'fs',
+      #  'here',
        # 'leaflet',
-        'pins',
-        'plotly',
-        'rmarkdown',
+      #  'pins',
+      # 'plotly',
+       # 'rmarkdown',
         'sf',
         'terra',
        # 'themis',
-        'tmap',
+       # 'tmap',
        # 'vip',
         'sp',
-      'maptools',
-      'spatstat'
+     # 'maptools',
+     # 'spatstat'
                       )
   ipak(packages, lib_dir)
 
   #install packages with devtools from Github
-  devtools::install_github("rstudio/reticulate")
-  devtools::install_github("rstudio/tensorflow")
-  devtools::install_github("rstudio/keras")
+ # devtools::install_github("rstudio/reticulate")
+ # devtools::install_github("rstudio/tensorflow")
+ # devtools::install_github("rstudio/keras")
 }
 
 
